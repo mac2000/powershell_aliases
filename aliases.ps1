@@ -13,9 +13,11 @@
 #region Symfony
 function Symfony-Console { php app\console $args }
 function Symfony-Server-Run { s server:run }
+function Symfony-Create-Project { c create-project symfony/framework-standard-edition $args }
 
 Set-Alias s Symfony-Console
 Set-Alias sr Symfony-Server-Run
+Set-Alias scr Symfony-Create-Project
 #endregion
 
 #region Composer
@@ -23,6 +25,7 @@ function Composer-Install { composer install }
 function Composer-Update { composer update }
 function Composer-Dump-Autoload { composer dump-autoload }
 
+Set-Alias c composer
 Set-Alias ci Composer-Install
 Set-Alias cu Composer-Update
 Set-Alias ca Composer-Dump-Autoload
